@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WrapperTube II - Scratch</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="content-script-type" content="text/javascript">
+        <meta http-equiv="content-style-type" content="text/css">
+        <script type="text/javascript" language="JavaScript" src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <style type="text/css">
+            body, html {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                overflow: hidden;
+            }
+            #flash {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script type="text/javascript" language="JavaScript">
+            var isDirty = true;
+            window.onbeforeunload = function () {
+                if (isDirty) {
+                    // Firefox will not use the string. IE use it
+                    return "Are you sure you want to leave? Any unsaved changes will be lost.";
+                }
+                // if nothing returned, browser leave the page without any message
+            }
+        </script>
+    </head>
+    <body>
+        <div id="flash">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width='100%' height='100%' id='scratch'>
+                <param name="movie" value="swf/Scratch.swf" />
+                <param name="quality" value="best" />
+                <param name="allowScriptAccess" value="always" />
+                <param name="allowFullScreen" value="true" />
+                <param name="swLiveConnect" value="true" />
+                <param name="menu" value="false" />
+                <param name="bgcolor" value="white" />
+                <param name="wmode" value="direct" />
+                <param name="flashvars" value="autostart=false&project_isNew=true" />
+                <embed src='swf/Scratch.swf' width='100%' height='100%' type="application/x-shockwave-flash" name='scratch' quality="best" allowScriptAccess="always" allowFullScreen="true" swLiveConnect="true" pluginspage="http://www.macromedia.com/go/getflashplayer/" menu="false" bgcolor="white" wmode="direct" flashvars="autostart=false&project_isNew=true" />
+            </object>
+        </div>
+        <script type="text/javascript" language="JavaScript">
+            var flashapp = document.getElementById('flash');
+function JSsetPresentationMode(fillScreen) {
+	if (fillScreen) {
+  if(flashapp.requestFullscreen) {
+    flashapp.requestFullscreen();
+  } else if(flashapp.mozRequestFullScreen) {
+    flashapp.mozRequestFullScreen();
+  } else if(flashapp.webkitRequestFullscreen) {
+    flashapp.webkitRequestFullscreen();
+  } else if(flashapp.webkitRequestFullScreen) {
+    flashapp.webkitRequestFullScreen();
+  } else if(flashapp.msRequestFullscreen) {
+    flashapp.msRequestFullscreen();
+  }
+	} else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+	}
+}
+        </script>
+    </body>
+</html>

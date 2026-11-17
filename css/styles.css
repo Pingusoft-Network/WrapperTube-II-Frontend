@@ -1,0 +1,130 @@
+body {
+	background-color: grey;
+	background-image: url(../images/kao.png);
+	font-family: Tahoma, Geneva, sans-serif;
+	color: black;
+}
+a {
+	color: #e66;
+	text-decoration: none;
+}
+a:hover {
+	color: #e99;
+	text-decoration: none;
+}
+.main {
+	background-color: white;
+}
+.headice {
+	box-shadow:inset 0 0 36px #FFF;
+	background-color: red;
+	color: white;
+	font-size:100%;
+	font-weight: bold;
+}
+.headice a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.headice a:hover {
+	color: #AAA;
+	-webkit-transition: linear color 0.4s;
+}
+.headice .logo {
+	font-size: 22px;
+}
+.projecticon {
+	text-align: center;
+	max-width: 130px;
+	vertical-align: top;
+	margin: 3px;
+	display: inline-block;
+}
+
+.foot {
+	background-color: skyblue;
+	color: white;
+}
+
+.clearfloat {
+	  clear: both;
+	  height: 0;
+	  font-size: 1px;
+	  line-height: 0px;
+	  color: white;
+}
+
+.glow {
+	font-size: 24px;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+	            text-shadow: 0 0 4px red,
+                         0 0 8px red,
+                         0 0 12px red,
+                         0 0 16px red,
+                         0 0 20px red;
+  }
+  to {
+	            text-shadow: 0 0 8px blue,
+                         0 0 12px blue,
+                         0 0 16px blue,
+                         0 0 20px blue,
+                         0 0 24px blue;
+  }
+}
+
+.searchbox {
+	width: 100%;
+	opacity: .8;
+	border-radius: 3px;
+	color: #AAA;
+}
+
+input[type=button], input[type=submit] {
+	background-color: #f00;
+	border: none;
+	border-radius: 8px;
+	color: #FFF;
+	font-weight: bold;
+	min-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: inset 0 0 10px #FFF;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+	background-color: #511;
+}
+
+input[type=button]:active, input[type=submit]:active {
+	background-color: #e66;
+	color: #BBB;
+	box-shadow: inset 0 3px 10px #FFF;
+}
+.star-rating1 {
+	background-color: white;
+	padding: 1px;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.videoactions {
+	background-image: linear-gradient(to bottom, #bcbcbc, #ededed);
+	text-align: center;
+}
+
+.userheading {
+	border-bottom: solid 1px #000;
+}
+
+#friendslist {
+	list-style: none;
+	margin-left: -40px;
+}

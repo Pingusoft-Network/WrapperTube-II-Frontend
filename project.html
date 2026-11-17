@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="content-script-type" content="text/javascript">
+		<meta http-equiv="content-style-type" content="text/css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<title>WrapperTube II - Pingu</title>
+	</head>
+	<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+		<table width="90%" align="center" border="0" cellpadding="10" cellspacing="0" class="main">
+			<tr class="headice">
+				<td class="logo">
+					<b><a href="index.html"><img src="images/logo.png" border="0" width="28" height="28" style="vertical-align:middle;"> WrapperTube II</a></b>
+				</td>
+				<td class="searchbar">
+				<form method="get" action="search.html">
+					<table border="0" cellpadding="2" cellspacing="0">
+					<tr>
+					<td width="100%">
+						<input type="text" placeholder="Search" name="q" class="searchbox">
+						</td>
+						<td>
+						<input type="submit" value="Search">
+						</td>
+						</tr>
+					</table>
+				</form>
+				</td>
+				<td width="1" align="center">
+					<a href="browse.html">Browse</a>
+				</td>
+				<td width="1" align="center">
+					<a href="scratch.html">Scratch</a>
+				</td>
+				<td width="1" align="center">
+					<a href="paint.html">Paint</a>
+				</td>
+				<td width="1" align="center">
+					<a href="upload.html">Upload</a>
+				</td>
+				<td width="1" align="center">
+					<a href="community.html">Community</a>
+				</td>
+				<td width="1" align="center">
+					<a href="login.html">Login</a>
+				</td>
+			</tr>
+			<tr class="bodie">
+				<td colspan="8">
+				<div style="width: 780px;">
+				<div style="float:left;">
+					<h2>Pingu</h2>
+						 <video width="480" height="360" controls style="background-color:black;">
+  <source src="uploads/Pingu.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
+					<table height="48" width="480" border="0">
+  <tbody><tr valign="middle">
+    <td class="videoactions"><a href="User.html">Sophie</a></td>
+    <td class="videoactions">7 Oct 1952 01:00:00</td>
+		<td class="videoactions"><img src="images/views.png" alt="views" title="views" width="32" height="32"><br>1</td>
+	<td class="videoactions"><a style="cursor:pointer"><img src="images/download.png" alt="download" title="download" width="32" height="32"></a><br>0</td>
+	    <td class="videoactions"><a style="cursor:pointer" onclick="alert('Favourited the project.');"><img src="images/fav.png" alt="favourite" title="favourite" width="32" height="32"></a><br>0</td>
+    <td class="videoactions">						<div class="star-rating1">
+                    <img src="images/empty_star.png" style="cursor:pointer" onclick="alert('Rated the project 1/5.');">
+                    <img src="images/empty_star.png" style="cursor:pointer" onclick="alert('Rated the project 2/5.');">
+                    <img src="images/empty_star.png" style="cursor:pointer" onclick="alert('Rated the project 3/5.');">
+                    <img src="images/empty_star.png" style="cursor:pointer" onclick="alert('Rated the project 4/5.');">
+                    <img src="images/empty_star.png" style="cursor:pointer" onclick="alert('Rated the project 5/5.');">
+</div><br>0 ratings</td>
+  </tr>
+</tbody></table>
+<p><a href="report.html" style="cursor:pointer"><img src="images/flag.png" alt="flag" width="22" height="22"> Flag as inappropriate...</a> • <a onclick="document.getElementById('addtoform').style.display = document.getElementById('addtoform').style.display == 'block' ? 'none' : 'block';" style="cursor:pointer"><img src="images/addto.png" alt="add to" width="22" height="22"> Add to...</a></p>
+<div style="display:none" id="addtoform">
+<h3>Add to:</h3>
+<a href="javascript:alert('Added');">Quicklist</a>
+<p>Playlists:</p>
+	<table border="0"><tbody><tr><td><a href="javascript:alert('Added');">Mein playlist</a></td></tr></tbody></table>
+	<p>Studios:</p>
+	<table border="0"><tbody><tr><td><a href="javascript:alert('Added');">Mein studio</a></td></tr></tbody></table></div>
+	<h3>Comments</h3>
+	<form action="project.html" method="post" enctype="multipart/form-data">
+	<textarea id="newComment" name="comment" rows="4" cols="60"></textarea><br>
+	<input type="submit" id="commentSubmit" width="100px" value="Submit">
+</form>
+<div id="comments">
+<hr>
+<h4 id="comment_heading"><img src="images/Sophie.jpg" width="32px" height="32px" /><a href="User.html">Sophie</a> - <a href="#comment_heading">7 Oct 1952 01:00:00</a></h4><p>Comment if you downloaded.</p><p id="cd"><a style="cursor:pointer" onclick="replyToComment()">Reply</a> &bull; <a style="cursor:pointer" href="report_comment.html">Flag as inappropriate</a></p>
+</div>
+</div>
+<div style="float:right; width:260px;">
+					<h3>Description</h3>
+					<p>Pingu Video.</p>
+					<h3>Category</h3>
+					<p><a href="browse.html">Gaming</a></p>
+					<h3>Tags</h3>
+					<p><a href="search.html">funny</a></p>
+					<h3>Share</h3>
+					<p>Link:
+					<input name="video_link" id="watch-url-field" type="text" value="wrappertube ii" readonly="" style="width:180px;" onclick="this.focus();this.select();"></p>
+					<p>Embed:
+					<input name="video_embed" id="watch-url-field" type="text" value="wrappertube embed" readonly="" style="width:160px;" onclick="this.focus();this.select();"></p>
+					<h3>More from: <a href="User.html">Sophie</a></h3>
+										<div class="projecticon">
+										<a href="Project.html">
+						<img src="images/SNIFF GAS.jpg" alt="Project icon" width="120px" height="90px">
+						<br>
+						SNIFF PETROL
+						</a>
+					</div>
+										<div class="projecticon">
+					<a href="Project.html">
+						<img src="images/Katelyn MX.png" alt="Project icon" width="120px" height="90px">
+						<br>
+						Katelyn MX
+						</a>
+					</div>
+										<div class="projecticon">
+					<a href="Project.html">
+						<img src="images/aboriginal.jpg" alt="Project icon" width="120px" height="90px">
+						<br>
+						Don't Sleep On The Road
+						</a>
+					</div>
+</div>
+</div>
+				</td>
+			</tr>
+			<tr class="foot">
+				<td colspan="8">
+					<hr class="clearfloat">
+					Copyright ©2026 - WrapperTube
+				</td>
+			</tr>
+		</table>
+		<script type="text/javascript" language="JavaScript">
+		function replyToComment() {
+		var repl = document.getElementById('cd');
+		repl.innerHTML = '<textarea id="replyto" rows="4" cols="40"></textarea><br /><input type="submit" value="Submit" onclick="alert(\'submitted\');" />';
+		}
+		</script>
+	</body>
+</html>
